@@ -1,14 +1,13 @@
 const clientId = input_data['clientId']; // Replace with your Client ID
 const clientSecret = input_data['clientSecret ']; // Replace with your Client Secret
-const username = input_data['username ']; // Replace with your RingCentral username
-const extension = input_data['extension ']; // Replace with your extension, or leave blank if not using one
-const password = input_data['password ']; // Replace with your RingCentral password
+const jwt= input_data['JWT']; // Replace with your RingCentral JWT
+const grant_type= input_data['grant_type']; // Static value
 
 const encodedCredentials = Buffer.from(`${clientId}:${clientSecret}`).toString('base64');
 
 const tokenUrl = 'https://platform.ringcentral.com/restapi/oauth/token';
 
-const body = `grant_type=password&username=${encodeURIComponent(username)}&extension=${encodeURIComponent(extension)}&password=${encodeURIComponent(password)}`;
+const body = `grant_type=${grant_type}&assertion=${jwt}`;
 
 fetch(tokenUrl, {
   method: 'POST',
