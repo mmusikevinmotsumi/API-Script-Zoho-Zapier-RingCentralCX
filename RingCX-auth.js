@@ -1,7 +1,7 @@
-const clientId = input_data['clientId']; // Replace with your Client ID
-const clientSecret = input_data['clientSecret ']; // Replace with your Client Secret
-const jwt= input_data['JWT']; // Replace with your RingCentral JWT
-const grant_type= input_data['grant_type']; // Static value
+const clientId = inputData.clientId; // Replace with your Client ID
+const clientSecret = inputData.clientSecret; // Replace with your Client Secret
+const jwt= inputData.JWT; // Replace with your RingCentral JWT
+const grant_type= inputData.grant_type; // Static value
 
 const encodedCredentials = Buffer.from(`${clientId}:${clientSecret}`).toString('base64');
 
