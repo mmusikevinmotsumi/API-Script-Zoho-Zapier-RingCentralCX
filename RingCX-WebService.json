@@ -1,0 +1,28 @@
+{
+  "agentId": "#agent_id#",
+  "agentUsername": "#agent_username#",  
+  "ani": "#ani#",
+  "dnis": "#dnis#",
+  "callStart": "#call_start#",
+  "duration": "#duration#",
+  "recordingUrl": "#recording_url#",
+  "agentDisposition": "#agent_disposition#",
+  "recordId": "#lead_id#",
+  "zohoId": "#extern_id#",
+  "firstname": "#first_name#",
+  "lastname": "#last_name#",
+  "phone": "#lead_phone#",
+  "email": "#email#",
+  "street": "#street#",
+  "city": "#city#",
+  "state": "#state#",
+  "zipCode": "#zip#",
+  "aux1": "#aux_data1#",
+  "aux2": "#aux_data2#",
+  "aux3": "#aux_data3#",
+  "aux4": "#aux_data4#",
+  "aux5": "#aux_data5#",
+  "campaignID": "#campaign_id#",
+  "campaignName": "#campaign_name#"
+
+}
