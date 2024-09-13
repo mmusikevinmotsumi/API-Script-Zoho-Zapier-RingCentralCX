@@ -13,7 +13,7 @@
   "lastname": "#last_name#",
   "phone": "#lead_phone#",
   "email": "#email#",
-  "street": "#street#",
+  "street": "#address1#",
   "city": "#city#",
   "state": "#state#",
   "zipCode": "#zip#",
@@ -23,6 +23,14 @@
   "aux4": "#aux_data4#",
   "aux5": "#aux_data5#",
   "campaignID": "#campaign_id#",
-  "campaignName": "#campaign_name#"
-
+  "campaignName": "#campaign_name#",
+  "dial_type": "#dial_type#",
+  "outbound_disposition": "#outbound_disposition#",
+  "outbound_externid": "#outbound_externid#",
+  "agent_notes": "#agent_notes#",
+  "pass_disposition": "#pass_disposition#",
+  "agent_firstname": "#agent_firstname#",
+  "agent_lastname": "#agent_lastname#",
+  "agent_phone": "#agent_phone#",
+  "sess_phone": "#sess_phone#"
 }
