@@ -1,0 +1,47 @@
+<!-- POST https://engage.ringcentral.com/voice/api/v1/admin/accounts/27160001/campaigns/823388/leadLoader/direct -->
+
+<!-- Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJhZ250IjpbMzY2ODk0M10sImFnbnQtYWNjIjp7IjM2Njg5NDMiOiIyNzE2MDAwMSJ9LCJlbWJkIjpmYWxzZSwicmNhYyI6IjMyNzIyNzAyNyIsImVzdSI6ZmFsc2UsImxhcHAiOiJTU08iLCJ4YXV0aCI6ImFjNzRmZTY5LTg1NWEtNGY2ZS1hMzE1LTljMGU3MjYzYWM1MCIsImFkbW4iOjEwMDA3LCJmbHIiOmZhbHNlLCJzc28iOnRydWUsInJjaWQiOjE0Njc0ODUwMjcsInBsYXQiOiJhd3M4MCIsImFjY3QiOiIyNzE2MDAwMCIsImV4cCI6MTcyNjgyMzIyNX0.SGxfad1lFwvs0ObXi5JxU0_SCgVs5-IRKErxlWnDYWpgxzDZIAhy-vWqQHSHCiWu-8lQ4USALn3NxNmYEuMAJ-n4JbS21KuJK-wPIa2uWb5_LKodWpzH1R8TQz8XkJtvgeZKgefzA1V8xGXw1GrSEgatlvH8L7vhrMJKVmKwFL7m9yvV7fixBDmXahYYCyDY_pTgeZ80tunL7vTpnNMPc6PHALry6jS-Z8-yHPWinooJ9hT61xsUOTrGvIeG_YW-s0i396QOrl8Qd0n-ni01ArR53iknW7DvIY13ks4uL1gWZ2s6YiYNKugox4kBtostdfBtfL02XjTesUs9HlYjCQ -->
+<!-- accept: application/json -->
+<!-- Content-Type: application/json -->
+
+
+<!-- Request body JSON -->
+{
+    "description": "Prospect customers",
+    "dialPriority": "IMMEDIATE",
+    "duplicateHandling": "REMOVE_FROM_LIST",
+    "listState": "ACTIVE",
+    "timeZoneOption": "NOT_APPLICABLE",
+    "uploadLeads": [
+      {
+         "leadPhone":"6825145487",
+         "externId":"1",
+         "firstName":"Jeff",
+         "lastName":"Malfetti",
+         "email":"test@test.com"
+      }
+    ]
+}
+
+<!-- Response body JSON -->
+
+{
+    "message": "Your uploaded lead list has successfully completed processing",
+    "leadsSupplied": 1,
+    "leadsConverted": 1,
+    "leadsAccepted": 1,
+    "leadsInserted": 1,
+    "internalDncCount": 0,
+    "dncUploadCount": 0,
+    "dncReturnedCount": 0,
+    "whitelistCount": 0,
+    "uploadFileName": "",
+    "deletedCount": 0,
+    "quotaCount": 0,
+    "listState": "ACTIVE",
+    "timeZoneOption": "NOT_APPLICABLE",
+    "hasDeletedLeads": false,
+    "rejectedRows": [],
+    "processingResult": "OK",
+    "processingStatus": "DEFAULT_NOT_A_FAILURE"
+  }
