@@ -21,8 +21,10 @@ const auxData2= inputData.auxData2 || "";
 const auxData3= inputData.auxData3 || "";
 const auxData4= inputData.auxData4 || "";
 const auxData5= inputData.auxData5 || "";
+const leadId= inputData.leadId;
+const auxPhone= inputData.leadPhone
 
-const url = `${baseURL}/api/v1/admin/accounts/${accountId}/campaigns/${campaignId}/leadLoader/direct`;
+const url = `${baseURL}/api/v1/admin/accounts/${accountId}/campaignLeads/${leadId}?campaignId=${campaignId}`;
 
 
 const headers = {
@@ -31,30 +33,22 @@ const headers = {
 };
 
 const data = {
-  "description": description,
-  "dialPriority": dialPriority,
-  "duplicateHandling": duplicateHandling,
-  "listState": listState,
-  "timeZoneOption": timeZoneOption,
-  "uploadLeads": [
-    {
-      "email": email,
-      "leadPhone": leadPhone,
-      "firstName": firstName,
-      "lastName": lastName,
-      "address1": address1,
-      "externId": externId,
-      "city": city,
-      "state": state,
-      "zip": zip,
-      "auxData1": auxData1,
-      "auxData2": auxData2,
-      "auxData3": auxData3,
-      "auxData4": auxData4,
-      "auxData5": auxData5,
-      "nextDialTime": null,
-      "auxPhone": leadPhone,
-      "extendedLeadData": {
+    "email": email,
+    "leadPhone": leadPhone,
+    "firstName": firstName,
+    "lastName": lastName,
+    "address1": address1,
+    "externId": externId,
+    "city": city,
+    "state": state,
+    "zip": zip,
+    "auxData1": auxData1,
+    "auxData2": auxData2,
+    "auxData3": auxData3,
+    "auxData4": auxData4,
+    "auxData5": auxData5,
+    "auxPhone": leadPhone,
+    "extendedLeadData": {
         "Email": email,
         "FirstName": firstName,
         "Phone": leadPhone,
@@ -65,12 +59,10 @@ const data = {
         "LastName": lastName,
         "City": city
       }
-    }
-  ]
 };
 
 const res = await fetch(url, {
-  method: 'POST',
+  method: 'PUT',
   headers: headers,
   body: JSON.stringify(data)
 })
