@@ -51,12 +51,12 @@ const data = {
     "extendedLeadData": {
         "Email": email,
         "FirstName": firstName,
+        "LastName": lastName,
         "Phone": leadPhone,
+        "RecordId": externId,
         "State": state,
         "ZipCode": zip,
         "Street": address1,
-        "RecordId": externId,
-        "LastName": lastName,
         "City": city
       }
 };
