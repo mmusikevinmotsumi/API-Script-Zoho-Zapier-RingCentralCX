@@ -22,7 +22,9 @@ const auxData3= inputData.auxData3 || "";
 const auxData4= inputData.auxData4 || "";
 const auxData5= inputData.auxData5 || "";
 const leadId= inputData.leadId;
-const auxPhone= inputData.leadPhone
+const auxPhone= inputData.leadPhone;
+const HomeType= inputData.HomeType || "";
+const SecondaryLeadType = inputData.SecondaryLeadType || "";
 
 const url = `${baseURL}/api/v1/admin/accounts/${accountId}/campaignLeads/${leadId}?campaignId=${campaignId}`;
 
@@ -57,7 +59,9 @@ const data = {
         "State": state,
         "ZipCode": zip,
         "Street": address1,
-        "City": city
+        "City": city,
+        "HomeType": HomeType,
+        "SecondaryLeadType": SecondaryLeadType
       }
 };
 
@@ -68,3 +72,4 @@ const res = await fetch(url, {
 })
 const body = await res.text();
 return {result: body};
+

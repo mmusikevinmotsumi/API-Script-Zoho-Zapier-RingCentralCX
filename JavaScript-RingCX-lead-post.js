@@ -21,6 +21,9 @@ const auxData2= inputData.auxData2 || "";
 const auxData3= inputData.auxData3 || "";
 const auxData4= inputData.auxData4 || "";
 const auxData5= inputData.auxData5 || "";
+const auxPhone= inputData.leadPhone;
+const homeType= inputData.homeType || "";
+const SecondaryLeadType = inputData.SecondaryLeadType || "" ;
 
 const url = `${baseURL}/api/v1/admin/accounts/${accountId}/campaigns/${campaignId}/leadLoader/direct`;
 
@@ -63,7 +66,9 @@ const data = {
         "State": state,
         "ZipCode": zip,
         "Street": address1,
-        "City": city
+        "City": city,
+        "HomeType": homeType,
+        "SecondaryLeadType": SecondaryLeadType
       }
     }
   ]
