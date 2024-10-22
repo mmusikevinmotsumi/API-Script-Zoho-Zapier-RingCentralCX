@@ -1,0 +1,65 @@
+<!-- POST https://engage.ringcentral.com/voice/api/v1/admin/accounts/27160001/campaigns/823388/leadLoader/direct -->
+
+<!-- X-Auth-Token: aws80:a6f080ac-0e2d-4144-ac2d-e331bf1b7334 -->
+<!-- Content-Type: application/json -->
+
+
+<!-- Request body JSON -->
+{
+  "description": "Recycle",
+  "dialPriority": "IMMEDIATE",
+  "duplicateHandling": "REMOVE_FROM_LIST",
+  "listState": "ACTIVE",
+  "timeZoneOption": "NOT_APPLICABLE",
+  "uploadLeads": [{
+       "leadPhone":"8322474008",
+       "leadPhoneE164":"+18322474008", 
+       "externId":"zcrm_2724634000280583003",
+       "firstName":"Fred",
+       "lastName":"Warner",
+       "address1":"502 Foxcroft Rd",
+       "city":"Warrenton",
+       "state":"Va",
+       "zip": "20186",
+       "email":"fewcsr@yahoo.com",
+       "auxData1":"Recycle",
+       "auxData2":"",
+       "auxData3":"Deck",
+        "auxData4":"2024-10-02 18:30:00",
+       "auxData5":"",
+       "extende`dLeadData": {
+          "Email": "fewcsr@yahoo.com",
+          "FirstName": "Fred",
+          "LastName": "Warner",
+          "Phone": "8322474008",
+          "RecordId": "zcrm_2724634000280583003",
+          "State": "Va",
+          "ZipCode": "20186",
+          "Street": "502 Foxcroft Rd",
+          "City": "Warrenton"
+        }
+    }]
+}
+
+<!-- Response body JSON -->
+
+{
+  "message": "Your uploaded lead list has successfully completed processing",
+  "leadsSupplied": 1,
+  "leadsConverted": 1,
+  "leadsAccepted": 1,
+  "leadsInserted": 1,
+  "internalDncCount": 0,
+  "dncUploadCount": 0,
+  "dncReturnedCount": 0,
+  "whitelistCount": 0,
+  "uploadFileName": "",
+  "deletedCount": 0,
+  "quotaCount": 0,
+  "listState": "ACTIVE",
+  "timeZoneOption": "NOT_APPLICABLE",
+  "hasDeletedLeads": false,
+  "rejectedRows": [],
+  "processingResult": "OK",
+  "processingStatus": "DEFAULT_NOT_A_FAILURE"
+}
